@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
-import Button from '@material-ui/core/Button';
-import Table from '@material-ui/core/Table';
-import TableBody from '@material-ui/core/TableBody';
+import IconButton from '@material-ui/core/IconButton';
+import DeleteIcon from '@material-ui/icons/Delete';
 import TableCell from '@material-ui/core/TableCell';
-import TableContainer from '@material-ui/core/TableContainer';
-import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 
 
@@ -17,7 +14,9 @@ class DepartamentoRow extends Component {
                 <TableCell align="right">{this.props.manager}</TableCell>
                 <TableCell align="right">{this.props.localizacion}</TableCell>
                 <TableCell align="right">
-                    <Button size="small" variant="contained" color="secondary">Eliminar</Button>
+                <IconButton aria-label="delete" color="primary">
+                    <DeleteIcon />
+                </IconButton>
                 </TableCell>
             </TableRow>
         );
